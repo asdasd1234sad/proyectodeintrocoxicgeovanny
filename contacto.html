@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario: Nirvana y My Chemical Romance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<a href="index.html">
+    <button
+        style="padding: 10px 20px; font-size: 16px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Regresar a la Página Principal
+    </button>
+</a>
+
+<body>
+
+    <h1>Formulario de Opinión</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="banda">¿Cuál banda prefieres?</label>
+        <select id="banda" name="banda" required>
+            <option value="">-- Selecciona una banda --</option>
+            <option value="nirvana">Nirvana</option>
+            <option value="mcr">My Chemical Romance</option>
+            <option value="ambas">Ambas</option>
+        </select>
+
+        <label for="cancion">Tu canción favorita:</label>
+        <input type="text" id="cancion" name="cancion">
+
+        <label for="comentarios">¿Por qué te gusta esa banda?</label>
+        <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+        <button type="submit">Enviar Opinión</button>
+    </form>
+
+</body>
+
+</html>
